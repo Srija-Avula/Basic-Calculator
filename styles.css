@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+}
+.title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Papyrus';
+}
+.title::after {
+    content: "✨";
+}
+.title::before {
+    content: "✨";
+}
+.calculator-container {
+    text-align: center;
+}
+.calculator {
+    background: #130808;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 260px;
+}
+#display {
+    width: 90%;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-bottom: 15px;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 10px;
+    justify-content: center;
+}
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    background: #e0e0e0;
+    color: #333;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+button:hover {
+    background: #d6d6d687;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.operator {
+    background: #ff9800;
+    color: white;
+}
+.operator:hover {
+    background: #d58308e6;
+}
+.operator:first-child {
+    background-color: #30abd4;
+    color: white;
+}
+.operator:first-child:hover {
+    background-color: #d9432a;
+}
+.delete-button {
+    background-color: #30abd4; 
+    color: white;
+}
+.delete-button:hover{
+    background-color: #d9432a;
+}
+.equal {
+    background: #5ee763;
+    color: white;
+}
+.equal:hover {
+    background: #35933a;
+}
+.decimal {
+    background: #dedcdcf0;
+    color: rgb(19, 17, 17);
+    font-size: 30px;
+}
+.decimal:hover {
+    background: #333;
+}
